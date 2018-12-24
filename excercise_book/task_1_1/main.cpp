@@ -20,9 +20,8 @@ int main()
     cout << "Enter side b" << endl;
     cin >> b;
 
-    fixed;
+    cout << fixed;
     cout << setprecision(2);
-    
     area = a * b;
     cout << "Area of this rectangle is " << area << endl;
 
