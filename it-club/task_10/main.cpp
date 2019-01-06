@@ -12,28 +12,60 @@ using namespace std;
 int main()
 {
     int rows = 8;
-    int colums = 8;
+    int columns = 8;
 
-    int arr[rows][colums] = {0};
+    int arr[rows][columns] = {0};
 
     // Clean array - put 0 everywhere
     for (int i = 0; i < rows; i++)
     {
-        for (int j = 0; j < colums; j++)
+        for (int j = 0; j < columns; j++)
         {
             arr[i][j] = 0;
         }
     }
 
-    // Get coordinates of bishop from user
-    int x;
-    int y;
-    cout << "This program shows available chess movements for bishop" << endl;
-    cout << "Tip: enter numbers from 1 to 8 (counting from top-left corner)" << endl;
+    // Get coordinates of rook from user
+    int row;
+    int column;
+    cout << "This program shows available chess movements for rook" << endl;
+    cout << "Tip: enter numbers from 0 to 7 (counting from top-left corner)" << endl;
     cout << "Enter X coordinate: " << endl;
-    cin >> x;
+    cin >> column;
     cout << "Enter Y coordinate: " << endl;
-    cin >> y;
+    cin >> row;
+
+    arr[row][column] = 1;
 
     // Work in progress
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    cout << "Available movements for rook at (" << row << ", " << column << ")" << endl;
+    
+    // Print array
+    for (int i = 0; i < columns; i++)
+    {
+        for (int j = 0; j < rows; j++)
+        {
+            cout << arr[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    _getch();
+    return 0;
 }
