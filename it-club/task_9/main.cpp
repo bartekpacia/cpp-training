@@ -1,7 +1,7 @@
 /**
  * Task 9
  * Print the available movements of rook in chees game for
- * the coordinates entered by the user. Chess board is 8 x 8.
+ * the coordinates entered by the user. Chess board is 8 row 8.
  **/
 
 #include <iostream>
@@ -12,57 +12,57 @@ using namespace std;
 int main()
 {
     int rows = 8;
-    int colums = 8;
+    int columns = 8;
 
-    int arr[rows][colums] = {0};
+    int arr[rows][columns] = {0};
 
     // Clean array - put 0 everywhere
     for (int i = 0; i < rows; i++)
     {
-        for (int j = 0; j < colums; j++)
+        for (int j = 0; j < columns; j++)
         {
             arr[i][j] = 0;
         }
     }
 
     // Get coordinates of rook from user
-    int x;
-    int y;
+    int row;
+    int column;
     cout << "This program shows available chess movements for rook" << endl;
     cout << "Tip: enter numbers from 0 to 7 (counting from top-left corner)" << endl;
     cout << "Enter X coordinate: " << endl;
-    cin >> x;
+    cin >> column;
     cout << "Enter Y coordinate: " << endl;
-    cin >> y;
+    cin >> row;
 
-    arr[x][y] = 1;
+    arr[row][column] = 1;
 
     // Calculate movements for X axis
-    for (int i = 0; i < rows; i++)
+    for (int i = 0; i < columns; i++)
     {
-        if (i == x)
+        if (i == column)
         {
             continue;
         }
-        arr[i][y] = 7;
+        arr[row][i] = 7;
     }
 
     // Calculate movements for Y axis
-    for (int i = 0; i < colums; i++)
+    for (int i = 0; i < rows; i++)
     {
-        if (i == y)
+        if (i == row)
         {
             continue;
         }
-        arr[x][i] = 7;
+        arr[i][column] = 7;
     }
 
-    cout << "Available movements for rook at (" << x << ", " << y << ")" << endl;
+    cout << "Available movements for rook at (" << column << ", " << row << ")" << endl;
     
     // Print array
     for (int i = 0; i < rows; i++)
     {
-        for (int j = 0; j < colums; j++)
+        for (int j = 0; j < columns; j++)
         {
             cout << arr[i][j] << " ";
         }
