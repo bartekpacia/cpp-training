@@ -1,6 +1,6 @@
 /**
  * Task 9
- * Print the available movements of the tower in chees game for
+ * Print the available movements of rook in chees game for
  * the coordinates entered by the user. Chess board is 8 x 8.
  **/
 
@@ -25,17 +25,15 @@ int main()
         }
     }
 
-    // Get coordinates of tower from user
+    // Get coordinates of rook from user
     int x;
     int y;
-    cout << "Tip: enter numbers from 1 to 8" << endl;
+    cout << "This program shows available chess movements for rook" << endl;
+    cout << "Tip: enter numbers from 0 to 7 (counting from top-left corner)" << endl;
     cout << "Enter X coordinate: " << endl;
     cin >> x;
     cout << "Enter Y coordinate: " << endl;
     cin >> y;
-
-    x -= 1;
-    y -= 1;
 
     arr[x][y] = 1;
 
@@ -50,7 +48,7 @@ int main()
     }
 
     // Calculate movements for Y axis
-    for (int i = 01; i < colums; i++)
+    for (int i = 0; i < colums; i++)
     {
         if (i == y)
         {
@@ -59,7 +57,7 @@ int main()
         arr[x][i] = 7;
     }
 
-    cout << "Available movements for tower at (" << x << ", " << y << ")" << endl;
+    cout << "Available movements for rook at (" << x << ", " << y << ")" << endl;
     
     // Print array
     for (int i = 0; i < rows; i++)
