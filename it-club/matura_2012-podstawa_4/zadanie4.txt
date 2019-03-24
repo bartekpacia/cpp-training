@@ -1,0 +1,8 @@
+Liczby, ktorych cyfry tworza ciag rosnacy: 
+2389
+23567
+123456789
+3468
+Liczba parzystych liczb: 495
+Liczba z największa suma cyfr: 187869866
+Liczba z najmniejsza suma cyfr: 10010

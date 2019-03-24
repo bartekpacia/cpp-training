@@ -14,7 +14,7 @@ int main()
     int *n = new int;
     *n = 25;
 
-    //w = w + 2; // Zmiana adresu na o 2 wi�kszy
+    //w = w + 2; // Zmiana adresu na o 2 większy
 
     *w = *w + 6;
 

@@ -1,7 +1,7 @@
 /**
  * Task from Matura exam (category IT)
- * Link 1:https://cke.gov.pl/egzamin-maturalny/egzamin-w-starej-formule/arkusze/2011-2/maj-2011/
- * Link 2: https://cke.gov.pl/images/_EGZAMIN_MATURALNY_OD_2015/Arkusze_egzaminacyjne/2011/P/inf_pp_2.pdf
+ * https://cke.gov.pl/egzamin-maturalny/egzamin-w-starej-formule/arkusze/2011-2/maj-2011/
+ * https://cke.gov.pl/images/_EGZAMIN_MATURALNY_OD_2015/Arkusze_egzaminacyjne/2011/P/inf_pp_2.pdf
  **/
 
 #include <iostream>
@@ -34,7 +34,7 @@ int main()
             parzyste++;
         }
 
-        // Odnajdywanie palindrom�w
+        // Odnajdywanie palindromów
         int i = 0;
         int j = wyraz.length() - 1;
         for (; i < j;)
