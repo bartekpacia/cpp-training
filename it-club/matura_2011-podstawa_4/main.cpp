@@ -4,9 +4,9 @@
  * https://cke.gov.pl/images/_EGZAMIN_MATURALNY_OD_2015/Arkusze_egzaminacyjne/2011/P/inf_pp_2.pdf
  **/
 
-#include <iostream>
-#include <fstream>
 #include <conio.h>
+#include <fstream>
+#include <iostream>
 
 using namespace std;
 
@@ -22,14 +22,12 @@ int main()
     int parzyste = 0;
     int nieparzyste = 0;
 
-    while (!wejscie.eof())
-    {
+    while (!wejscie.eof()) {
         bool jestPalindromem = true;
         wejscie >> wyraz;
 
         // Odnajdywanie i liczenie parzystych
-        if (wyraz.length() % 2 == 0)
-        {
+        if (wyraz.length() % 2 == 0) {
             //cout << wyraz << endl;
             parzyste++;
         }
@@ -37,10 +35,8 @@ int main()
         // Odnajdywanie palindromów
         int i = 0;
         int j = wyraz.length() - 1;
-        for (; i < j;)
-        {
-            if (wyraz[i] != wyraz[j])
-            {
+        for (; i < j;) {
+            if (wyraz[i] != wyraz[j]) {
                 jestPalindromem = false;
             }
 
@@ -48,8 +44,7 @@ int main()
             j--;
         }
 
-        if (jestPalindromem)
-        {
+        if (jestPalindromem) {
             cout << wyraz << endl;
             wyjscieB << wyraz << endl;
         }
@@ -57,10 +52,8 @@ int main()
         // Sumowanie ASCII
         i = 0;
         j = 1;
-        for (; i < wyraz.length() - 1; i++, j++)
-        {
-            if (wyraz[i] + wyraz[j] == 220)
-            {
+        for (; i < wyraz.length() - 1; i++, j++) {
+            if (wyraz[i] + wyraz[j] == 220) {
                 wyjscieC << wyraz << endl;
                 break;
             }

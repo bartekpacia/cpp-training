@@ -4,15 +4,14 @@
  * https://cke.gov.pl/images/_EGZAMIN_MATURALNY_OD_2015/Arkusze_egzaminacyjne/2012/maj/infor/a2_pp.pdf
  **/
 
-#include <iostream>
-#include <fstream>
-#include <conio.h>
 #include <bits/stdc++.h>
+#include <conio.h>
+#include <fstream>
+#include <iostream>
 
 using namespace std;
 
-int main()
-{
+int main() {
     ifstream dane("cyfry.txt");
     ofstream wyjscie("zadanie4.txt");
     int obecna = 0;
@@ -24,8 +23,7 @@ int main()
 
     wyjscie << "Liczby, ktorych cyfry tworza ciag rosnacy: " << endl;
 
-    for (int i = 0; i < 1000; i++)
-    {
+    for (int i = 0; i < 1000; i++) {
         dane >> obecna;
 
         string obecna_string = to_string(obecna);
@@ -33,49 +31,41 @@ int main()
         bool jest_ciagiem_rosnacym = false;
 
         // Liczenie parzystych liczb
-        if (obecna % 2 == 0)
-        {
+        if (obecna % 2 == 0) {
             liczba_parzystych++;
         }
 
         // Liczenie sumy cyfr obecnej liczby
-        for (int i = 0; i < obecna_string.length(); i++)
-        {
+        for (int i = 0; i < obecna_string.length(); i++) {
             int cyfra = obecna_string[i];
             cyfra = cyfra - 48;
             obecna_suma_cyfr = obecna_suma_cyfr + cyfra;
         }
 
         // Najmniejsza suma
-        if (obecna_suma_cyfr < najmniejsza_suma)
-        {
+        if (obecna_suma_cyfr < najmniejsza_suma) {
             najmniejsza_suma = obecna_suma_cyfr;
             liczba_z_najmniejsza_suma = obecna;
         }
 
         // Największa suma
-        if (obecna_suma_cyfr > najwieksza_suma)
-        {
+        if (obecna_suma_cyfr > najwieksza_suma) {
             najwieksza_suma = obecna_suma_cyfr;
             liczba_z_najwieksza_suma = obecna;
         }
 
         // Czy jest ciągiem rosnącym?
-        for (int i = 0; i < obecna_string.length() - 1; i++)
-        {
+        for (int i = 0; i < obecna_string.length() - 1; i++) {
             int obecna_cyfra = (int)obecna_string[i] - 48;
             int nastepna_cyfra = (int)obecna_string[i + 1] - 48;
-            if (obecna_cyfra >= nastepna_cyfra)
-            {
+            if (obecna_cyfra >= nastepna_cyfra) {
                 jest_ciagiem_rosnacym = false;
                 break;
             }
             jest_ciagiem_rosnacym = true;
         }
 
-        if (jest_ciagiem_rosnacym)
-        {
-            //cout << obecna << endl;
+        if (jest_ciagiem_rosnacym) {
             wyjscie << obecna << endl;
         }
     }

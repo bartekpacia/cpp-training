@@ -5,14 +5,13 @@
  * the result with precision of two decimal places.
  **/
 
-#include <iostream>
 #include <conio.h>
 #include <iomanip>
+#include <iostream>
 
 using namespace std;
 
-int main()
-{
+int main() {
     float a, b, area;
 
     cout << "Enter side a" << endl;
