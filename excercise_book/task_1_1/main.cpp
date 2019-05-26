@@ -4,10 +4,9 @@
  * values of sides a and b are float, so is the area. Display
  * the result with precision of two decimal places.
  **/
-
-#include <conio.h>
 #include <iomanip>
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -24,7 +23,8 @@ int main() {
     area = a * b;
     cout << "Area of this rectangle is " << area << endl;
 
-    _getch();
+    vector<int> numbers = {1, 2, 3};
+    cout << numbers.capacity() << endl;
 
     return 0;
 }

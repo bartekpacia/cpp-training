@@ -1,2 +1,4 @@
 *.exe
-.vscode/ipch
+*.out
+*.DS_STORE
+.vscode/
