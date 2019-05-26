@@ -7,6 +7,7 @@
 #include <iomanip>
 #include <iostream>
 #include <vector>
+#include <string>
 
 using namespace std;
 
@@ -23,8 +24,7 @@ int main() {
     area = a * b;
     cout << "Area of this rectangle is " << area << endl;
 
-    vector<int> numbers = {1, 2, 3};
-    cout << numbers.capacity() << endl;
+    getchar();
 
     return 0;
 }

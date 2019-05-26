@@ -8,7 +8,6 @@
 #include <iomanip>
 #include <iostream>
 #define _USE_MATH_DEFINES
-#include <conio.h>
 #include <math.h>
 
 using namespace std;
@@ -18,7 +17,7 @@ int main() {
     cout << setprecision(5);
     cout << fixed << setprecision(5) << "Pi: " << M_PI << endl;
 
-    _getch();
+    getchar();
 
     return 0;
 }
