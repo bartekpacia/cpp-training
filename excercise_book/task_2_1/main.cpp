@@ -13,7 +13,18 @@ int main()
 {
     float a, b, c;
 
-    cout << "a";
+    cout << "Podaj bok a: ";
+    cin >> a;
+    cout << "Podaj bok b: ";
+    cin >> b;
+    cout << "Podaj bok c: ";
+    cin >> c;
+
+    if (a * a + b * b == c * c) {
+        cout << "trojkacik prostokątny :D";
+    } else {
+         cout << "nie";
+    }
 
     return 0;
 }
