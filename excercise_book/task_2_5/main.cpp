@@ -1,7 +1,6 @@
 #include <iostream>
 #include <random>
 
-
 /**
  * I didn't do a task, I was just making fun XD.
  */
