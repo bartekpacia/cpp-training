@@ -18,6 +18,10 @@ int main() {
     while (number != 0) {
         cin >> number;
 
+        if (number == 0) {
+            break;
+        }
+
         if (number < min) {
             min = number;
         }
