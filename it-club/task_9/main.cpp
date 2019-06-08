@@ -13,7 +13,7 @@ int main()
     int rows = 8;
     int columns = 8;
 
-    int arr[rows][columns] = {0};
+    int arr[rows][columns];
 
     // Clean array - put 0 everywhere
     for (int i = 0; i < rows; i++)
