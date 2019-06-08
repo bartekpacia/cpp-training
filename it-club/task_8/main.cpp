@@ -10,7 +10,7 @@ using namespace std;
 int main()
 {
     int rows = 8;
-    int colums = 12;
+    int colums = 8;
 
     int arr[rows][colums];
 

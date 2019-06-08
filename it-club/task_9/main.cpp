@@ -5,7 +5,6 @@
  **/
 
 #include <iostream>
-#include <conio.h>
 
 using namespace std;
 
@@ -69,6 +68,6 @@ int main()
         cout << endl;
     }
 
-    _getch();
+    getchar();
     return 0;
 }
