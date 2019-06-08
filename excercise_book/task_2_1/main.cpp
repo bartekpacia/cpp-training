@@ -1,7 +1,7 @@
 /**
  * Task 2.1
- * Write a program which checks if 
- * a rectangular triangle can be created 
+ * Write a program which checks if
+ * a rectangular triangle can be created
  * from sides a, b and c.
  **/
 
@@ -9,8 +9,7 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     float a, b, c;
 
     cout << "Podaj bok a: ";
@@ -23,7 +22,7 @@ int main()
     if (a * a + b * b == c * c) {
         cout << "trojkacik prostokątny :D";
     } else {
-         cout << "nie";
+        cout << "nie";
     }
 
     return 0;

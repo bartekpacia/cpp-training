@@ -4,8 +4,6 @@
  * https://cke.gov.pl/images/_EGZAMIN_MATURALNY_OD_2015/Arkusze_egzaminacyjne/2012/maj/infor/a2_pp.pdf
  **/
 
-#include <bits/stdc++.h>
-#include <conio.h>
 #include <fstream>
 #include <iostream>
 
@@ -71,12 +69,14 @@ int main() {
     }
 
     wyjscie << "Liczba parzystych liczb: " << liczba_parzystych << endl;
-    wyjscie << "Liczba z największa suma cyfr: " << liczba_z_najwieksza_suma << endl;
-    wyjscie << "Liczba z najmniejsza suma cyfr: " << liczba_z_najmniejsza_suma << endl;
+    wyjscie << "Liczba z największa suma cyfr: " << liczba_z_najwieksza_suma
+            << endl;
+    wyjscie << "Liczba z najmniejsza suma cyfr: " << liczba_z_najmniejsza_suma
+            << endl;
 
     dane.close();
     cout << "Wykonano pomyslnie" << endl;
-    _getch();
+    getchar();
 
     return 0;
 }

@@ -7,9 +7,8 @@
 
 using namespace std;
 
-int main()
-{
-    for(int x = 0; x <= 10; x = x + 1) {
+int main() {
+    for (int x = 0; x <= 10; x = x + 1) {
         int y = 3 * x;
         cout << y << endl;
     }

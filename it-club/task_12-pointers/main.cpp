@@ -6,15 +6,13 @@
 
 using namespace std;
 
-int main()
-{
-
+int main() {
     int x = 4;
     int *w = &x;
     int *n = new int;
     *n = 25;
 
-    //w = w + 2; // Zmiana adresu na o 2 większy
+    // w = w + 2; // Zmiana adresu na o 2 większy
 
     *w = *w + 6;
 

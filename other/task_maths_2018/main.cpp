@@ -7,27 +7,20 @@
  **/
 
 #include <iostream>
-#include <conio.h>
 
 using namespace std;
 
-int main()
-{
-    for (int i = 1; i < 1000; i++)
-    {
-        if (i % 10 == 9)
-        {
-            if (i % 15 == 14)
-            {
-                if (i % 21 == 20)
-                {
+int main() {
+    for (int i = 1; i < 1000; i++) {
+        if (i % 10 == 9) {
+            if (i % 15 == 14) {
+                if (i % 21 == 20) {
                     cout << i << " is valid" << endl;
                 }
             }
         }
     }
-
-    _getch();
+    getchar();
 
     return 0;
 }

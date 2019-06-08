@@ -7,11 +7,10 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     random_device rd;
     mt19937 gen(rd());
-    uniform_int_distribution<> dist (1, 160);
+    uniform_int_distribution<> dist(1, 160);
 
     int iq = dist(gen);
 

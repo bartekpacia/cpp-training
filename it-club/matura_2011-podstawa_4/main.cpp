@@ -4,7 +4,6 @@
  * https://cke.gov.pl/images/_EGZAMIN_MATURALNY_OD_2015/Arkusze_egzaminacyjne/2011/P/inf_pp_2.pdf
  **/
 
-#include <conio.h>
 #include <fstream>
 #include <iostream>
 
@@ -28,7 +27,7 @@ int main()
 
         // Odnajdywanie i liczenie parzystych
         if (wyraz.length() % 2 == 0) {
-            //cout << wyraz << endl;
+            // cout << wyraz << endl;
             parzyste++;
         }
 
@@ -65,7 +64,7 @@ int main()
     wyjscieA << "Liczba parzystych hasel:" << parzyste << endl;
     wyjscieA << "Liczba nieparzystych hasel:" << nieparzyste << endl;
 
-    _getch();
+    getchar();
 
     return 0;
 }

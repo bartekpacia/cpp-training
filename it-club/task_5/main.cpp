@@ -1,6 +1,6 @@
 /**
  * Task 5
- * Write a program which taking a single character as input, and 
+ * Write a program which taking a single character as input, and
  * prints if the entered char is a number or a letter.
  **/
 
@@ -8,35 +8,26 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     char c;
 
-    do
-    {
+    do {
         cout << "Enter a character. Enter '.' (dot) to exit." << endl;
         cin >> c;
         c = tolower(c);
 
-        if(c == '.')
-        {
+        if (c == '.') {
             return 0;
         }
 
-        if (c >= 'a' && c <= 'z')
-        {
+        if (c >= 'a' && c <= 'z') {
             cout << "It's a letter" << endl;
-        }
-        else
-        {
+        } else {
             int charCode = (int)c - '0';
 
-            if (charCode >= 0 && charCode <= 9)
-            {
+            if (charCode >= 0 && charCode <= 9) {
                 cout << "It's a number" << endl;
-            }
-            else
-            {
+            } else {
                 cout << "Unknown character" << endl;
             }
         }

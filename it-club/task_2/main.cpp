@@ -4,21 +4,18 @@
  **/
 
 #include <iostream>
-#include <conio.h>
 
 using namespace std;
 
-int main()
-{
+int main() {
     int sum = 0;
-    for (int i = 0; i <= 100; i++)
-    {
+    for (int i = 0; i <= 100; i++) {
         sum = sum + i;
     }
 
     cout << "Sum: " << sum << endl;
 
-    _getch();
+    getchar();
 
     return 0;
 }
