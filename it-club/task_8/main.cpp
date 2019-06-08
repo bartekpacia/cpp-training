@@ -4,7 +4,6 @@
  **/
 
 #include <iostream>
-#include <conio.h>
 
 using namespace std;
 
@@ -13,7 +12,7 @@ int main()
     int rows = 8;
     int colums = 12;
 
-    int arr[rows][colums] = {0};
+    int arr[rows][colums];
 
     // Clean array - put 0 everywhere
     for(int i = 0; i < rows; i++){
@@ -30,6 +29,6 @@ int main()
         cout << endl;
     }
 
-    _getch();
+    getchar();
     return 0;
 }
