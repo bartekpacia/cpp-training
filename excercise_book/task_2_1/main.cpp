@@ -20,9 +20,9 @@ int main() {
     cin >> c;
 
     if (a * a + b * b == c * c) {
-        cout << "trojkacik prostokątny :D";
+        cout << "trojkacik prostokątny :D" << endl;
     } else {
-        cout << "nie";
+        cout << "nie xD" << endl;
     }
 
     return 0;
