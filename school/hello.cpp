@@ -1,12 +1,8 @@
 #include <iostream>
 #include <string>
 
-void greet(std::string greeting) { std::cout << greeting << std::endl; }
-
 int main() {
-    std::string greeting = "Hello, World from C++!";
-
-    greet(greeting);
+    std::cout << "Hello, World from C++!" << std::endl;
 
     getchar();
 

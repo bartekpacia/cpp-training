@@ -1,15 +1,15 @@
+< -- WSZYSTKIE SĄ ZROBIONE W FOLDERZE WYŻEJ -- >
+
+————————
 Zad.1
 Wyświetlić wartość funkcji f dla x podanego przez użytkownika
 
 f(x) = (3x -5) / 4x
-
 ————————
 Zad.2
 Użytkownik podaje promień, a program wyświetla obwód i pole koła.
-
 ————————
 Zad.3
 Użytkownik podaje liczbę, a program wyświetla informację, czy liczba jest:
-
-	1. Parzysta / nieparzysta.
-	2. Czy jest podzielna przez 5
+1. Parzysta / nieparzysta.
+2. Czy jest podzielna przez 5
