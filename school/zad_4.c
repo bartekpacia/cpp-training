@@ -1,5 +1,5 @@
-// Użytownik podaje liczbę naturalną
-// program wyswietla czy jest dwucryfrowa czy jednocyfrowa
+// Użytownik podaje liczbę naturalną.
+// Program wyświetla czy jest jednocyfrowa czy dwucyfrowa
 #include <stdio.h>
 
 int main() {
