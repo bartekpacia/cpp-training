@@ -13,8 +13,8 @@ int main() {
     }
 
     /*
-    v = s / t
-    v * t = s
+    v = s / t    * t
+    v * t = s    / v
     t = v / s
     */
 
