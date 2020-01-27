@@ -2,7 +2,6 @@
  Program przyjmuje liczbę od 1 do 12 i wyświetla odpowiadającą nazwę miesiąca;
  **/
 
-#include <math.h>
 #include <stdio.h>
 #include <string.h>
 
