@@ -1,3 +1,8 @@
+/**
+ * Użytkownik podaje liczbę rzeczywistą będącą drogą. Program wyświetla,
+ * ile czasu zajmie pokonanie tej drogi z prędkością 90 km/h/
+ */
+
 #include <stdio.h>
 
 const float v = 25;  // 25 m/s = 90 km / h
@@ -11,12 +16,6 @@ int main() {
         printf("Droga nie może być mniejsza od 0!");
         return 1;
     }
-
-    /*
-    v = s / t    * t
-    v * t = s    / v
-    t = v / s
-    */
 
     float t = s / v;
 

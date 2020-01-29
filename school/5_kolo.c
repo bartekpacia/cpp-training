@@ -1,6 +1,7 @@
 /**
- * Użytkownik podaje promień, a program wyświetla obwód i pole koła.
- **/
+ * Użytkownik podaje liczbę rzeczywistą będąca promieniem koła. Program
+ * wyświetla obwód i pole koła z tym promieniem.
+ */
 
 #include <math.h>
 #include <stdio.h>

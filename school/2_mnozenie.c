@@ -1,12 +1,15 @@
+/**
+ * Użytkownik podaje 2 liczby rzeczywiste. Program wyświetla ich iloczyn.
+ */
+
 #include <stdio.h>
 
 int main() {
-    printf("Program oblicza sumę dwóch liczb.\n");
     float a;
     float b;
-    printf("Wprowadź pierwszą liczbę: \n");
+    printf("Wprowadź pierwszą liczbę: ");
     scanf("%f", &a);
-    printf("Wprowadź pierwszą liczbę: \n");
+    printf("Wprowadź pierwszą liczbę: ");
     scanf("%f", &b);
 
     float suma = a * b;

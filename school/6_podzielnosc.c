@@ -1,8 +1,9 @@
 /**
- * Użytkownik podaje liczbę, a program wyświetla informację, czy liczba jest:
+ * Użytkownik podaje liczbę naturalną. Pprogram wyświetla informację, czy liczba
+ * jest:
  * 1. parzysta / nieparzysta.
  * 2. podzielna przez 5
- **/
+ */
 
 #include <math.h>
 #include <stdbool.h>

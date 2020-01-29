@@ -1,16 +1,17 @@
 /**
- Program przyjmuje liczbę od 1 do 12 i wyświetla odpowiadającą nazwę miesiąca;
- **/
+ * Użytkownik podaje liczbę naturalną od 1 do 12. Program wyświetla
+ * odpowiadającą nazwę miesiąca.
+ */
 
 #include <stdio.h>
 #include <string.h>
 
 int main() {
-    int liczba = 0;
+    int liczba;
     printf("Podaj liczbę od 1 do 12: ");
     scanf("%i", &liczba);
 
-    char* miesiac = NULL;
+    char* miesiac;
 
     switch (liczba) {
         case 1:
@@ -50,10 +51,10 @@ int main() {
             miesiac = "grudzień";
             break;
         default:
-            miesiac = "podałeś złą liczbę!";
+            miesiac = "Podałeś złą liczbę!";
     }
 
-    printf("%s", miesiac);
+    printf("%s\n", miesiac);
 
     getchar();
 

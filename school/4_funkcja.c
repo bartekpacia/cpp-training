@@ -1,8 +1,9 @@
 /**
- * Wyświetlić wartość funkcji f dla x podanego przez użytkownika
+ * Użytkownik podaje liczbę rzeczywistą x.
+ * Program wyświetla wartośc funkcji f dla x podanego przez użytkownika
  *
  *  f(x) = (3x -5) / 4x
- **/
+ */
 
 #include <math.h>
 #include <stdio.h>

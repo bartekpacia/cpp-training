@@ -1,9 +1,8 @@
 /**
- Program przyjmuje 3 liczby rzeczywiste i wyświetla największą z nich.
- **/
+ * Użytkownik podaje 3 liczby rzeczywiste. Program wyświetla największą z nich.
+ */
 
 #include <stdio.h>
-#include <string.h>
 
 int main() {
     float liczba1, liczba2, liczba3, najwieksza;
@@ -29,7 +28,7 @@ int main() {
         najwieksza = liczba3;
     }
 
-    printf("Najwieksza liczba: %f", najwieksza);
+    printf("Najwieksza liczba: %f \n", najwieksza);
     getchar();
 
     return 0;

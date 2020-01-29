@@ -1,6 +1,6 @@
 /**
- * Użytkownik podaje znak. Program wyświetla czy jest to samogłoska czy inny
- * znak.
+ * Użytkownik podaje znak. Program wyświetla czy jest to samogłoska. Jeśli znak
+ * nie jest samogłoską, wyświetla tekst "To inny znak".
  */
 
 #include <ctype.h>
@@ -21,10 +21,10 @@ int main() {
         case 'o':
         case 'u':
         case 'y':
-            printf("To samogłoska");
+            printf("To samogłoska\n");
             break;
         default:
-            printf("To inny znak");
+            printf("To inny znak\n");
     }
 
     getchar();

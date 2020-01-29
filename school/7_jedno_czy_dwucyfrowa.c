@@ -1,10 +1,11 @@
-// Użytownik podaje liczbę naturalną.
-// Program wyświetla czy jest jednocyfrowa czy dwucyfrowa
+/**
+ * Użytownik podaje liczbę naturalną.
+ * Program wyświetla czy jest jedno, dwu, trzy, czy czterocyfrowa.
+ */
+
 #include <stdio.h>
 
 int main() {
-    printf("Hello, World from C!\n");
-
     int number;
     printf("Podaj liczbę: ");
     scanf("%i", &number);
