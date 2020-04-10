@@ -5,6 +5,7 @@ using namespace std;
 
 int main() {
     int T;
+
     cin >> T;
 
     for (int t = 0; t < T; t++) {
@@ -14,19 +15,14 @@ int main() {
 
         int p, c;
         int prev_p, prev_c;
-        for (int i = 0; i < n; i++) {
-            if (i == 0) {
-                cin >> prev_p >> prev_c;
-            } else if (i == 1) {
+        for (int i = 1; i <= n; i++) {
+            if (i == 1) {
                 cin >> p >> c;
-
-                if (p < prev_p || c < prev_c) {
-                    valid = false;
-                }
 
                 if (c > p) {
                     valid = false;
                 }
+
             } else {
                 prev_p = p;
                 prev_c = c;
@@ -38,6 +34,12 @@ int main() {
 
                 if (c > p) {
                     valid = false;
+                }
+
+                if (p == prev_p) {
+                    if (c != prev_c) {
+                        valid = false;
+                    }
                 }
             }
         }
