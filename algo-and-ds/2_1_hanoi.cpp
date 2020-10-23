@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void hanoi(int n, char from, char to, char usin);
+void Hanoi(int n, char from, char to, char usin);
 
 int main() {
   int n;
@@ -11,17 +11,17 @@ int main() {
   cin >> n;
   cout << endl;
 
-  hanoi(n, 'a', 'c', 'b');
+  Hanoi(n, 'a', 'c', 'b');
 
   return 0;
 }
 
-void hanoi(int n, char from, char to, char usin) {
+void Hanoi(int n, char from, char to, char usin) {
   if (n == 1) {
     cout << from << " --> " << to << endl;
   } else {
-    hanoi(n - 1, from, usin, to);
+    Hanoi(n - 1, from, usin, to);
     cout << from << " --> " << to << endl;
-    hanoi(n - 1, usin, to, from);
+    Hanoi(n - 1, usin, to, from);
   }
 }
