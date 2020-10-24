@@ -3,32 +3,31 @@
 #include <iostream>
 
 template <class T>
-class Stack {
- private:
-  struct Node {
-    T value;
-    Node next;
+Stack<T>::Stack() {
+  head = NULL;
+}
 
-    Node(T _value, Node* _next) {
-      value = _value;
-      next = _next;
-    };
-  };
+template <class T>
+bool Stack<T>::isEmpty() {
+  return head == NULL;
+}
 
-  Node* head;
+template <class T>
+void Stack<T>::Push(T newValue) {
+  head = new Node(newValue, head);
+}
 
- public:
-  Stack() { head = NULL; };
+template <class T>
+T Stack<T>::Pop() {
+  T value = head->value;
+  Node* oldHead = head;
+  head = head->next;
+  delete oldHead;
+  return value;
+}
 
-  bool isEmpty() { return head == NULL; }
-
-  void Push(T newValue) { head = new Node(newValue, head); }
-
-  T Pop() {
-    T value = head->value;
-    Node* oldHead = head;
-    head = head->next;
-    delete oldHead;
-    return value;
-  }
-};
+template <class T>
+Stack<T>::Node::Node(T _value, Stack<T>::Node* _next) {
+  value = _value;
+  next = _next;
+}

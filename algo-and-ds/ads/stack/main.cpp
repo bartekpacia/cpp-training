@@ -4,6 +4,8 @@
 
 using namespace std;
 
+template class Stack<int>;
+
 int main() {
   Stack<int>* stack = new Stack<int>();
 
